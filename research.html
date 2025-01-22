@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科学研究 - 张明教授课题组</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style-research.css">
+</head>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html">主页</a>
+                <a href="research.html" class="active">科学研究</a>
+                <a href="teaching.html">人才培养</a>
+                <a href="admission.html">招生要求</a>
+            </div>
+            <div class="lang-switch" onclick="toggleLanguage()">EN/中文</div>
+        </div>
+    </nav>
+
+    <h1 class="page-title">科学研究</h1>
+
+    <!-- 基础理论研究部分 -->
+    <section class="research-area">
+        <div class="area-header">
+            <h2 class="area-title">基础理论研究</h2>
+            <p class="area-description">
+                关注人工智能核心算法突破与理论创新，致力于解决深度学习基础理论问题，
+                推动可解释人工智能发展，建立更可靠的机器学习范式。
+            </p>
+        </div>
+
+        <div class="research-grid">
+            <div class="research-card">
+                <div class="research-image">
+                    <canvas id="neuralNetCanvas"></canvas>
+                </div>
+                <div class="research-content">
+                    <h3>神经网络理论研究</h3>
+                    <p>研究神经网络的表达能力和优化理论，提出新型网络结构和训练方法，
+                       突破深度学习模型的理论瓶颈。</p>
+                    <ul>
+                        <li>神经网络表达能力分析</li>
+                        <li>优化算法理论研究</li>
+                        <li>网络结构搜索理论</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-image">
+                    <canvas id="explainableAICanvas"></canvas>
+                </div>
+                <div class="research-content">
+                    <h3>可解释性AI理论</h3>
+                    <p>构建AI系统的可解释性理论框架，研究模型决策机制，
+                       开发可信赖的解释方法。</p>
+                    <ul>
+                        <li>因果推理框架构建</li>
+                        <li>注意力机制解释</li>
+                        <li>知识表示分析</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-image">
+                    <canvas id="mlTheoryCanvas"></canvas>
+                </div>
+                <div class="research-content">
+                    <h3>机器学习基础理论</h3>
+                    <p>研究机器学习的统计理论基础，构建新的学习范式，
+                       提升模型的泛化能力。</p>
+                    <ul>
+                        <li>统计学习理论</li>
+                        <li>表示学习理论</li>
+                        <li>迁移学习理论</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="achievements">
+            <h3>理论研究成果</h3>
+            <div class="achievement-list">
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-book"></i></div>
+                    <h4>高水平论文</h4>
+                    <p>ICML、NeurIPS、ICLR等顶级会议论文20余篇</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                    <h4>学术奖项</h4>
+                    <p>国家自然科学奖二等奖1项，CCF优秀论文奖2项</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-project-diagram"></i></div>
+                    <h4>开源项目</h4>
+                    <p>GitHub星标1000+的理论研究工具包2个</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 重大应用研究部分 -->
+    <section class="research-area">
+        <div class="area-header">
+            <h2 class="area-title">重大应用研究</h2>
+            <p class="area-description">
+                面向国家重大需求，开展人工智能技术的创新应用研究，
+                在医疗、金融、工业等领域实现关键技术突破。
+            </p>
+        </div>
+
+        <div class="research-grid">
+            <div class="research-card">
+                <div class="research-image">
+                    <canvas id="medicalAICanvas"></canvas>
+                </div>
+                <div class="research-content">
+                    <h3>智慧医疗</h3>
+                    <p>开发医学影像分析、疾病诊断和药物研发等AI解决方案，
+                       提升医疗诊断效率和准确率。</p>
+                    <ul>
+                        <li>医学影像智能分析</li>
+                        <li>智能辅助诊断</li>
+                        <li>药物分子设计</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-image">
+                    <canvas id="financeAICanvas"></canvas>
+                </div>
+                <div class="research-content">
+                    <h3>金融科技</h3>
+                    <p>研究智能风控、量化交易和金融预测等应用，
+                       提供可靠的金融AI解决方案。</p>
+                    <ul>
+                        <li>智能风险控制</li>
+                        <li>量化投资策略</li>
+                        <li>金融预测模型</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-image">
+                    <canvas id="manufacturingCanvas"></canvas>
+                </div>
+                <div class="research-content">
+                    <h3>智能制造</h3>
+                    <p>开发工业质检、预测性维护和生产优化等系统，
+                       推动制造业智能化转型。</p>
+                    <ul>
+                        <li>智能质量检测</li>
+                        <li>设备健康监测</li>
+                        <li>生产调度优化</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="achievements">
+            <h3>应用研究成果</h3>
+            <div class="achievement-list">
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-industry"></i></div>
+                    <h4>产业转化</h4>
+                    <p>成功转化应用项目10项，服务企业50家以上</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-patent"></i></div>
+                    <h4>专利授权</h4>
+                    <p>获得发明专利30项，软件著作权20项</p>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon"><i class="fas fa-handshake"></i></div>
+                    <h4>产学研合作</h4>
+                    <p>建立3个联合实验室，承担重大产业化项目5项</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Canvas绘制函数
+        function drawNeuralNetwork(canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 设置神经元和连接的样式
+            const nodeRadius = 8;
+            const colors = ['#3498db', '#e74c3c', '#2ecc71'];
+            
+            // 定义层
+            const layers = [3, 4, 4, 3];
+            const layerSpacing = canvas.width / (layers.length + 1);
+            const maxNodes = Math.max(...layers);
+            
+            // 绘制连接
+            ctx.strokeStyle = '#bdc3c7';
+            ctx.lineWidth = 0.5;
+            
+            for(let i = 0; i < layers.length - 1; i++) {
+                const startX = layerSpacing * (i + 1);
+                const endX = layerSpacing * (i + 2);
+                
+                for(let j = 0; j < layers[i]; j++) {
+                    const startY = (canvas.height / (layers[i] + 1)) * (j + 1);
+                    
+                    for(let k = 0; k < layers[i + 1]; k++) {
+                        const endY = (canvas.height / (layers[i + 1] + 1)) * (k + 1);
+                        ctx.beginPath();
+                        ctx.moveTo(startX, startY);
+                        ctx.lineTo(endX, endY);
+                        ctx.stroke();
+                    }
+                }
+            }
+            
+            // 绘制神经元
+            layers.forEach((nodes, i) => {
+                const x = layerSpacing * (i + 1);
+                ctx.fillStyle = colors[i % colors.length];
+                
+                for(let j = 0; j < nodes; j++) {
+                    const y = (canvas.height / (nodes + 1)) * (j + 1);
+                    ctx.beginPath();
+                    ctx.arc(x, y, nodeRadius, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+            });
+        }
+
+        function drawExplainableAI(canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 绘制主要图形
+            const centerX = canvas.width / 2;
+            const centerY = canvas.height / 2;
+            const radius = Math.min(canvas.width, canvas.height) / 4;
+
+            // 绘制同心圆
+            const circles = 3;
+            for(let i = circles; i > 0; i--) {
+                ctx.beginPath();
+                ctx.arc(centerX, centerY, radius * (i/circles), 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(52, 152, 219, ${0.2 * i})`;
+                ctx.fill();
+            }
+
+            // 绘制放射线
+            const rays = 8;
+            ctx.strokeStyle = '#3498db';
+            ctx.lineWidth = 2;
+            for(let i = 0; i < rays; i++) {
+                const angle = (i * 2 * Math.PI) / rays;
+                ctx.beginPath();
+                ctx.moveTo(centerX, centerY);
+                ctx.lineTo(
+                    centerX + Math.cos(angle) * radius,
+                    centerY + Math.sin(angle) * radius
+                );
+                ctx.stroke();
+            }
+
+            // 在端点添加小圆
+            ctx.fillStyle = '#e74c3c';
+            for(let i = 0; i < rays; i++) {
+                const angle = (i * 2 * Math.PI) / rays;
+                const x = centerX + Math.cos(angle) * radius;
+                const y = centerY + Math.sin(angle) * radius;
+                
+                ctx.beginPath();
+                ctx.arc(x, y, 5, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function drawMLTheory(canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 绘制散点图
+            const points = 30;
+            const colors = ['#3498db', '#e74c3c', '#2ecc71'];
+            
+            for(let i = 0; i < points; i++) {
+                const x = Math.random() * canvas.width;
+                const y = Math.random() * canvas.height;
+                const colorIndex = Math.floor(Math.random() * colors.length);
+                
+                ctx.fillStyle = colors[colorIndex];
+                ctx.beginPath();
+                ctx.arc(x, y, 4, 0, Math.PI * 2);
+                ctx.fill();
+            }
+
+            // 绘制决策边界
+            ctx.strokeStyle = '#34495e';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height/2);
+            
+            for(let x = 0; x < canvas.width; x++) {
+                const y = canvas.height/2 + Math.sin(x/30) * 30;
+                ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+        }
+
+        function drawMedicalAI(canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 绘制心电图样式
+            ctx.strokeStyle = '#e74c3c';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height/2);
+
+            for(let x = 0; x < canvas.width; x++) {
+                let y;
+                if(x % 100 < 20) {
+                    y = canvas.height/2 - Math.sin(x/2) * 40;
+                } else {
+                    y = canvas.height/2 + Math.sin(x/20) * 10;
+                }
+                ctx.lineTo(x, y);
+            }
+            ctx.stroke();
+
+            // 添加网格背景
+            ctx.strokeStyle = '#bdc3c7';
+            ctx.lineWidth = 0.5;
+            const gridSize = 20;
+            
+            for(let x = 0; x < canvas.width; x += gridSize) {
+                ctx.beginPath();
+                ctx.moveTo(x, 0);
+                ctx.lineTo(x, canvas.height);
+                ctx.stroke();
+            }
+            
+            for(let y = 0; y < canvas.height; y += gridSize) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(canvas.width, y);
+                ctx.stroke();
+            }
+        }
+
+        function drawFinanceAI(canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 绘制股票图表
+            ctx.strokeStyle = '#2ecc71';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(0, canvas.height);
+
+            const points = [];
+            let lastY = canvas.height/2;
+            
+            for(let x = 0; x < canvas.width; x += 10) {
+                const y = lastY + (Math.random() - 0.5) * 20;
+                points.push({x, y: Math.min(Math.max(y, 20), canvas.height - 20)});
+                lastY = y;
+            }
+
+            points.forEach((point, i) => {
+                if(i === 0) {
+                    ctx.moveTo(point.x, point.y);
+                } else {
+                    ctx.lineTo(point.x, point.y);
+                }
+            });
+            
+            ctx.stroke();
+
+            // 添加成交量柱状图
+            ctx.fillStyle = 'rgba(46, 204, 113, 0.2)';
+            points.forEach(point => {
+                const height = Math.random() * 50;
+                ctx.fillRect(point.x - 4, canvas.height - height, 8, height);
+            });
+        }
+
+        function drawManufacturing(canvas) {
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#f8f9fa';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // 绘制齿轮
+            const centerX = canvas.width/2;
+            const centerY = canvas.height/2;
+            const radius = Math.min(canvas.width, canvas.height)/3;
+            const teeth = 12;
+
+            ctx.strokeStyle = '#34495e';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            
+            for(let i = 0; i < teeth; i++) {
+                const angle = (i * 2 * Math.PI) / teeth;
+                const outerRadius = radius * 1.2;
+                const innerRadius = radius * 0.8;
+                
+                ctx.lineTo(
+                    centerX + Math.cos(angle) * outerRadius,
+                    centerY + Math.sin(angle) * outerRadius
+                );
+                
+                ctx.lineTo(
+                    centerX + Math.cos(angle + Math.PI/teeth) * innerRadius,
+                    centerY + Math.sin(angle + Math.PI/teeth) * innerRadius
+                );
+            }
+            
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fillStyle = 'rgba(52, 73, 94, 0.1)';
+            ctx.fill();
+
+            // 绘制中心圆
+            ctx.beginPath();
+            ctx.arc(centerX, centerY, radius * 0.3, 0, Math.PI * 2);
+            ctx.fillStyle = '#34495e';
+            ctx.fill();
+        }
+
+        // 初始化所有画布
+        document.addEventListener('DOMContentLoaded', () => {
+            const canvases = {
+                'neuralNetCanvas': drawNeuralNetwork,
+                'explainableAICanvas': drawExplainableAI,
+                'mlTheoryCanvas': drawMLTheory,
+                'medicalAICanvas': drawMedicalAI,
+                'financeAICanvas': drawFinanceAI,
+                'manufacturingCanvas': drawManufacturing
+            };
+
+            Object.entries(canvases).forEach(([id, drawFunc]) => {
+                const canvas = document.getElementById(id);
+                if (canvas) {
+                    canvas.width = canvas.offsetWidth;
+                    canvas.height = canvas.offsetHeight;
+                    drawFunc(canvas);
+                }
+            });
+        });
+
+        // 语言切换
+        let isEnglish = false;
+        const translations = {
+            'zh': {
+                'page-title': '科学研究',
+                'basic-research': '基础理论研究',
+                'applied-research': '重大应用研究',
+                // ... 其他中文翻译
+            },
+            'en': {
+                'page-title': 'Research',
+                'basic-research': 'Basic Theoretical Research',
+                'applied-research': 'Major Applications',
+                // ... 其他英文翻译
+            }
+        };
+
+        function toggleLanguage() {
+            isEnglish = !isEnglish;
+            const lang = isEnglish ? 'en' : 'zh';
+            
+            // 更新文本内容
+            Object.entries(translations[lang]).forEach(([key, value]) => {
+                const elements = document.getElementsByClassName(key);
+                Array.from(elements).forEach(element => {
+                    element.textContent = value;
+                });
+            });
+        }
+    </script>
+</body>
+</html>
